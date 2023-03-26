@@ -1,0 +1,155 @@
+body {
+    background-color: rgb(171, 161, 161);
+    font-family: 'tahoma'; 
+  }
+  
+  h1 {
+    color: rgb(18, 30, 103);
+    text-align: center;
+    /* animation: myAnim2 2s ease 0s 1 normal forwards; */
+    font-family: 'Brush Script MT', cursive;
+    font-size: 60px;
+  }
+
+  a { 
+    text-decoration: none;
+    font-size: 20px;
+    background-color: #83d676;
+    border: none;
+    padding: 5px 5px;
+    text-align: center;
+    box-shadow: 2px 2px 2px 1px #000;
+    border-radius: 10px;
+    font-family: 'tahoma'; 
+}
+
+input {
+  background-color: rgb(199, 189, 189);
+    font-size: 30px;
+    box-shadow: 5px 5px 5px 1px #000;
+    border-radius: 10px;
+    font-family: 'tahoma';
+    color: rgb(18, 30, 103); 
+}
+
+th {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 50px;
+}
+
+  .td1 {
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: line-through solid;
+    font-family: 'tahoma'; 
+  }
+
+  table {
+    font-size: 30px;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+
+    color: rgb(18, 30, 103);
+    text-align: center;
+    box-shadow: 5px 5px 10px 1px #000;
+    /* animation: myAnim 2s ease 0s 1 normal forwards; */
+
+    background-color: #d5d676;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+
+  }
+
+  form {
+    font-size: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(18, 30, 103);
+  }
+
+  p {
+    font-size: 25px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'tahoma'; 
+  }
+
+  
+  /* @keyframes myAnim {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 1;
+		transform: translateY(-45px);
+	}
+
+	24% {
+		opacity: 1;
+	}
+
+	40% {
+		animation-timing-function: ease-in;
+		transform: translateY(-24px);
+	}
+
+	65% {
+		animation-timing-function: ease-in;
+		transform: translateY(-12px);
+	}
+
+	82% {
+		animation-timing-function: ease-in;
+		transform: translateY(-6px);
+	}
+
+	93% {
+		animation-timing-function: ease-in;
+		transform: translateY(-4px);
+	}
+
+	25%,
+	55%,
+	75%,
+	87% {
+		animation-timing-function: ease-out;
+		transform: translateY(0px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+@keyframes myAnim2 {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(-1.2deg);
+	}
+} */

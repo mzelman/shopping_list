@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+  
+  <head>
+    <title>Shopping list</title>
+    <link th:href="@{/style.css}" rel="stylesheet">
+  </head>    
+  <body> 
+    <h1>Shopping list</h1>
+    <table>
+      <th>To buy:</th>
+        <tr th:each="item: ${items}">
+            <td th:attr="class=${item.crossedOut == true ? 'td1' : 'td'}" th:text="${item.name}"></td>
+            <td> <a th:if="${item.crossedOut} == false" style="color:rgb(175, 33, 33)" role="button" th:href="@{/crossOut/{id}(id=${item.id})}">cross out</a> 
+              <a th:if="${item.crossedOut} == true" style="color:rgb(175, 33, 33)" role="button" th:href="@{/uncross/{id}(id=${item.id})}">undo</a></td>
+              <td> <a style="color:rgb(175, 33, 33)" role="button" th:href="@{/delete/{id}(id=${item.id})}">delete</a> </td>
+        </tr>
+        <tr>
+          <td> <a th:if="${list_size} != 0" style="color:rgb(175, 33, 33)" role="button" th:href="@{/clear}">Clear list</a> </td>
+      </tr>
+      <tr>
+        <td> <a th:if="${list_size} != 0" style="color:rgb(175, 33, 33)" role="button" th:href="@{/deleteCrossedOut}">Delete crossed out</a> </td>
+    </tr>
+    </table>
+    <br>
+  </div>
+    <div style="color:green" th:if="${status} == 'success'">
+      <p> You successfully submited the item! </p> 
+  </div>
+
+  <div style="color:rgb(175, 33, 33)" th:if="${status} == 'failed'">
+      <p> That item is already listed. </p> 
+ </div>
+    <form method="post" th:object="${item}" th:action="@{/submit}">
+      <p style="color:rgb(175, 33, 33)" th:errors="*{name}"></p>
+        <input type="text" placeholder="..." th:field="*{name}">
+        <input type="submit" value="Add">
+    </form>
+</body>
+</html>
